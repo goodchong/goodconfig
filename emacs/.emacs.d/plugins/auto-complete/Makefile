@@ -1,24 +1,12 @@
-VERSION=`perl -ne 'print $$1 if /;; Version: (.*)/' auto-complete.el`
-PACKAGE=auto-complete-${VERSION}
+INCLUDE_PATH    := ./src
+SOURCE_PATH     := ./src
+DEPENDENCY_PATH := ./src/dep
+OBJECT_PATH     := ./src/obj
 
-byte-compile:
-	emacs -Q -L . -batch -f batch-byte-compile *.el
+PROGRAM_NAME    := clang-complete
 
-install:
-	emacs -Q -L . -batch -l etc/install ${DIR}
+LDLIBS := $(shell llvm-config --ldflags) $(shell llvm-config --libs all) -lstdc++ -lclang
+CFLAGS += $(shell llvm-config --cflags) -Wall -Wextra -pedantic -O3
 
-clean:
-	rm -f *.elc
-	rm -f doc/*.html
-	rm -rf ${PACKAGE}
-	rm -f ${PACKAGE}.zip ${PACKAGE}.tar.bz2
 
-package: clean
-	mkdir ${PACKAGE}
-	cp -r *.el Makefile README.txt TODO.txt COPYING.*.txt doc etc dict ${PACKAGE}
-
-tar.bz2: package
-	tar cjf ${PACKAGE}.tar.bz2 ${PACKAGE}
-
-zip: package
-	zip -r ${PACKAGE}.zip ${PACKAGE}
+include makefile.mk
