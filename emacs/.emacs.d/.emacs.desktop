@@ -1,0 +1,95 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sun Dec 30 00:23:38 2012
+;; Desktop file format version 206
+;; Emacs version 24.2.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("S"))
+(setq regexp-search-ring nil)
+(setq register-alist '((48 . "(load \"~/.emacs.d/auto-complete-clang-async\" t t)\n")))
+(setq file-name-history '("~/.emacs.d/auto-complete" "~/.emacs.d/language-c" "~/.emacs.d/global" "~/test.cpp" "~/workspace/WrightEagle/src/BehaviorPass.cpp" "~/.emacs.d/auto-complete-clang-async" "~/.emacs.d/language-c" "~/.emacs.d/global" "~/.emacs" "~/workspace/WrightEagle/src/BehaviorPass.cpp" "~/workspace/WrightEagle/src/BehaviorPass.h" "~/.emacs.d/auto-complete" "~/workspace/WrightEagle/src/BehaviorPass.cpp"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/goodchong/workspace/WrightEagle/src/BehaviorPass.cpp"
+  "BehaviorPass.cpp"
+  'c++-mode
+  '(abbrev-mode linum-mode semantic-highlight-edits-mode semantic-show-unmatched-syntax-mode semantic-show-parser-state-mode semantic-highlight-func-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-idle-local-symbol-highlight-mode semantic-idle-completions-mode semantic-mru-bookmark-mode srecode-minor-mode semantic-decoration-mode auto-complete-mode)
+  887
+  '(130 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/goodchong/workspace/WrightEagle/src/BehaviorBase.h"
+  "BehaviorBase.h"
+  'c-mode
+  '(abbrev-mode linum-mode semantic-highlight-edits-mode semantic-show-unmatched-syntax-mode semantic-show-parser-state-mode semantic-highlight-func-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-idle-local-symbol-highlight-mode semantic-idle-completions-mode semantic-mru-bookmark-mode semantic-decoration-mode auto-complete-mode)
+  7074
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/goodchong/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(linum-mode semantic-highlight-edits-mode semantic-show-unmatched-syntax-mode semantic-show-parser-state-mode semantic-highlight-func-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-idle-local-symbol-highlight-mode semantic-idle-completions-mode semantic-mru-bookmark-mode srecode-minor-mode semantic-decoration-mode auto-complete-mode)
+  21
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/goodchong/.emacs.d/auto-complete"
+  "auto-complete"
+  'fundamental-mode
+  '(linum-mode)
+  483
+  '(452 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/goodchong/.emacs.d/language-c"
+  "language-c"
+  'lisp-mode
+  '(linum-mode semantic-highlight-edits-mode semantic-show-unmatched-syntax-mode semantic-show-parser-state-mode semantic-highlight-func-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-idle-local-symbol-highlight-mode semantic-idle-completions-mode semantic-mru-bookmark-mode srecode-minor-mode semantic-decoration-mode)
+  1010
+  '(977 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/goodchong/.emacs.d/global"
+  "global"
+  'fundamental-mode
+  '(linum-mode)
+  1309
+  '(1276 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/goodchong/workspace/WrightEagle/src/BehaviorPass.h"
+  "BehaviorPass.h"
+  'c-mode
+  '(abbrev-mode linum-mode semantic-highlight-edits-mode semantic-show-unmatched-syntax-mode semantic-show-parser-state-mode semantic-highlight-func-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-idle-local-symbol-highlight-mode semantic-idle-completions-mode semantic-mru-bookmark-mode semantic-decoration-mode auto-complete-mode)
+  419
+  '(417 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+

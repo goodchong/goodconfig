@@ -1,0 +1,61 @@
+# Sample .bashrc for SuSE Linux
+# Copyright (c) SuSE GmbH Nuernberg
+
+# There are 3 different types of shells in bash: the login shell, normal shell
+# and interactive shell. Login shells read ~/.profile and interactive shells
+# read ~/.bashrc; in our setup, /etc/profile sources ~/.bashrc - thus all
+# settings made here will also take effect in a login shell.
+#
+# NOTE: It is recommended to make language settings in ~/.profile rather than
+# here, since multilingual X sessions would not work properly if LANG is over-
+# ridden in every subshell.
+
+# Some applications read the EDITOR variable to determine your favourite text
+# editor. So uncomment the line below and enter the editor of your choice :-)
+#export EDITOR=/usr/bin/vim
+#export EDITOR=/usr/bin/mcedit
+
+# For some news readers it makes sense to specify the NEWSSERVER variable here
+#export NEWSSERVER=your.news.server
+
+# If you want to use a Palm device with Linux, uncomment the two lines below.
+# For some (older) Palm Pilots, you might need to set a lower baud rate
+# e.g. 57600 or 38400; lowest is 9600 (very slow!)
+#
+#export PILOTPORT=/dev/pilot
+#export PILOTRATE=115200
+
+test -s ~/.alias && . ~/.alias || true
+
+# add these lines to ~/.bashrc
+# colors defined with tput
+Black="$(tput sgr0 ; tput setaf 0)"
+Red="$(tput sgr0 ; tput setaf 1)"
+Green="$(tput sgr0 ; tput setaf 2)"
+Yellow="$(tput sgr0 ; tput setaf 3)"
+Blue="$(tput sgr0 ; tput setaf 4)"
+Purple="$(tput sgr0 ; tput setaf 5)"
+Cyan="$(tput sgr0 ; tput setaf 6)"
+White="$(tput sgr0 ; tput setaf 7)"
+# bold colors
+BlackBold="$(tput bold ; tput setaf 0)"
+RedBold="$(tput bold ; tput setaf 1)"
+GreenBold="$(tput bold ; tput setaf 2)"
+YellowBold="$(tput bold ; tput setaf 3)"
+BlueBold="$(tput bold ; tput setaf 4)"
+PurpleBold="$(tput bold ; tput setaf 5)"
+CyanBold="$(tput bold ; tput setaf 6)"
+WhiteBold="$(tput bold ; tput setaf 7)"
+# backgroud colors
+BlackBG="$(tput setab 0)"
+RedBG="$(tput setab 1)"
+GreenBG="$(tput setab 2)"
+YellowBG="$(tput setab 3)"
+BlueBG="$(tput setab 4)"
+PurpleBG="$(tput setab 5)"
+CyanBG="$(tput setab 6)"
+WhiteBG="$(tput setab 7)"
+NC="$(tput sgr0)" # No Color
+
+export PS1="\[$YellowBold\]\A \[$PurpleBold\]\u\[$Yellow\]@\[$GreenBold\]\h \[$NC\][\[$BlueBold\]\W\[$NC\]] "
+
