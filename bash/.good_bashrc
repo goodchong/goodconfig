@@ -59,3 +59,8 @@ NC="$(tput sgr0)" # No Color
 
 export PS1="\[$YellowBold\]\A \[$PurpleBold\]\u\[$Yellow\]@\[$GreenBold\]\h \[$NC\][\[$BlueBold\]\W\[$NC\]] "
 
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+set show-all-if-ambiguous on
+set completion-ignore-case on
+
