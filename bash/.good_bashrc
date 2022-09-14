@@ -25,7 +25,10 @@
 #export PILOTPORT=/dev/pilot
 #export PILOTRATE=115200
 
-test -s ~/.alias && . ~/.alias || true
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias ll='ls --color=auto -l'
+alias la='ls --color=auto -la'
 
 # add these lines to ~/.bashrc
 # colors defined with tput
